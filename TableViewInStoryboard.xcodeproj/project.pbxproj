@@ -15,6 +15,8 @@
 		264935712A8A102C003E974D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2649356F2A8A102C003E974D /* LaunchScreen.storyboard */; };
 		264935792A8A1511003E974D /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264935782A8A1511003E974D /* MovieCell.swift */; };
 		2649357E2A8A1EE2003E974D /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2649357D2A8A1EE2003E974D /* Movies.swift */; };
+		264935802A8A8982003E974D /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2649357F2A8A8982003E974D /* DataManager.swift */; };
+		264935822A8A8D8D003E974D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264935812A8A8D8D003E974D /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		264935722A8A102C003E974D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		264935782A8A1511003E974D /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		2649357D2A8A1EE2003E974D /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		2649357F2A8A8982003E974D /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		264935812A8A8D8D003E974D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				2649357D2A8A1EE2003E974D /* Movies.swift */,
+				2649357F2A8A8982003E974D /* DataManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -93,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				264935682A8A102B003E974D /* ViewController.swift */,
+				264935812A8A8D8D003E974D /* DetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -169,10 +175,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2649357E2A8A1EE2003E974D /* Movies.swift in Sources */,
+				264935802A8A8982003E974D /* DataManager.swift in Sources */,
 				264935692A8A102B003E974D /* ViewController.swift in Sources */,
 				264935652A8A102B003E974D /* AppDelegate.swift in Sources */,
 				264935792A8A1511003E974D /* MovieCell.swift in Sources */,
 				264935672A8A102B003E974D /* SceneDelegate.swift in Sources */,
+				264935822A8A8D8D003E974D /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
