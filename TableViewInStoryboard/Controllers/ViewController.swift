@@ -20,6 +20,8 @@ class ViewController: UIViewController  {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "영화목록"
+        
         setupTableView()
         setupDatas()
     }
@@ -36,7 +38,15 @@ class ViewController: UIViewController  {
         movieDataManager.makeMovieData() // 일반적으로는 서버에 요청
         movieDataArray = movieDataManager.getMovieData()  // 데이터 받아서 뷰컨의 배열에 저장
     }
-
+    
+    @IBAction func addButtonTapped(_ sender: UIBarButtonItem) {
+        
+        movieDataManager.updateMovieData()  // 일반적으로는 서버에 요청 (데이터 업데이트)
+        movieDataArray = movieDataManager.getMovieData()  // 다시 데이터 받아서 뷰컨의 배열에 저장
+        tableView.reloadData()   // 테이블뷰를 다시 불러오기
+        
+    }
+    
 }
 
 extension ViewController: UITableViewDataSource {
